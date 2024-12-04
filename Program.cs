@@ -8,6 +8,7 @@ namespace Name_cycle_
         {
             string name;
             string symbol;
+            string nameAndSymbol;
             string frame = "";
 
             Console.WriteLine("Введите имя:");
@@ -15,16 +16,17 @@ namespace Name_cycle_
             Console.WriteLine("Введите символ");
             symbol = Console.ReadLine();
 
-            for (int i = 0; i < name.Length; i++)
+            nameAndSymbol = symbol + name + symbol;
+
+            for (int i = 0; i < nameAndSymbol.Length; i++)
             {
                 frame += symbol;
             }
 
-            frame += symbol + symbol;
 
             Console.WriteLine();
             Console.WriteLine(frame);
-            Console.WriteLine(symbol + name + symbol);
+            Console.WriteLine(nameAndSymbol);
             Console.WriteLine(frame);
 
             Console.ReadKey();
