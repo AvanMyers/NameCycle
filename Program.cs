@@ -7,26 +7,25 @@ namespace Name_cycle_
         static void Main(string[] args)
         {
             string name;
-            string simbol;
-            string simbolName = "";
+            string symbol;
+            string frame = "";
 
             Console.WriteLine("Введите имя:");
             name = Console.ReadLine();
             Console.WriteLine("Введите символ");
-            simbol = Console.ReadLine();
-
+            symbol = Console.ReadLine();
 
             for (int i = 0; i < name.Length; i++)
             {
-                simbolName += simbol;
+                frame += symbol;
             }
 
-            simbolName += simbol + simbol;
+            frame += symbol + symbol;
 
             Console.WriteLine();
-            Console.WriteLine(simbolName);
-            Console.WriteLine(simbol + name + simbol);
-            Console.WriteLine(simbolName);
+            Console.WriteLine(frame);
+            Console.WriteLine(symbol + name + symbol);
+            Console.WriteLine(frame);
 
             Console.ReadKey();
         }
