@@ -15,7 +15,6 @@ namespace Name_cycle_
             name = Console.ReadLine();
             Console.WriteLine("Введите символ");
             symbol = Console.ReadLine();
-
             nameAndSymbol = symbol + name + symbol;
 
             for (int i = 0; i < nameAndSymbol.Length; i++)
@@ -23,12 +22,10 @@ namespace Name_cycle_
                 frame += symbol;
             }
 
-
             Console.WriteLine();
             Console.WriteLine(frame);
             Console.WriteLine(nameAndSymbol);
             Console.WriteLine(frame);
-
             Console.ReadKey();
         }
     }
